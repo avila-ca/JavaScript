@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            user-select: none;
+        }
+        .valu{
+            background-color: black;
+        }
+        .caja{
+            background-color: gray;
+            width: 30em;
+            padding: 20px;
+        }
+        .salida{
+            display: flex;
+            justify-content: center;
+           
+        }
+        #percent, #mem{
+            visibility: hidden;
+        }
+        .filas{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        #output{
+            background-color: aqua;
+            color: green;
+            font-size: 1.5em;
+            width: 15em;
+            height: 3em;
+        }
+        button{
+            width: 3em;
+            height: 3em;
+            gap: 10px;
+            margin: 0px;
+            padding: 10px;
+            background-color: orange;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-family:'Gill Sans';
+           
+        }
+        .teclas{
+            display: grid;
+        }
+        #output{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja">
+    <div class="salida">
+        <input type="text" readonly id="output">
+    </div>
+    <div class="teclas">
+        <div class="filas">
+            <button id="ac">AC</button>
+            <button id="nou">9</button>
+            <button id="vuit">8</button>
+            <button id="set">7</button>
+            <button id="divi">/</button>
+        </div>
+        <div class="filas">
+            <button id="c">C</button>
+            <button id="sis">6</button>
+            <button id="cinc">5</button>
+            <button id="quatre">4</button>
+            <button id="multi">*</button>
+        </div>
+        <div class="filas">
+            <button id="mem">Mem</button>
+            <button id="tres">3</button>
+            <button id="dos">2</button>
+            <button id="un">1</button>
+            <button id="resta">-</button>
+        </div>
+        <div class="filas">
+            <button id="percent">%</button>
+            <button id="cero">0</button>
+            <button id="punt">.</button>
+            <button id="igual">=</button>
+            <button id="mes">+</button>
+        </div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
